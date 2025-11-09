@@ -5,7 +5,7 @@
  * Brief summary of program: Sets an alarm for 5 seconds and handles the SIGALRM signal
  */
 
- #include <stdio.h>
+#include <stdio.h>
 #include <signal.h>
 #include <unistd.h>
  
