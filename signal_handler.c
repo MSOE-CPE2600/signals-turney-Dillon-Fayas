@@ -7,7 +7,7 @@
  * Modified by:
  * 
  * Brief summary of modifications:
- *   - Implemented a signal handler for SIGINT that prints a message and exits the program.
+ *   - Commented out exit(1) in the signal handler to allow the program to continue running after receiving SIGINT.
  */
 
 
@@ -21,7 +21,7 @@
  */
 void handle_signal() {
     printf("Received a signal\n");
-    exit(1);
+    // exit(1);
 }
 
 int main() {
