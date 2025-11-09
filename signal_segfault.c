@@ -11,8 +11,16 @@
 
 
 #include <stdio.h>
+#include <signal.h>
+
+void handle_sigsegv(int sig) {
+    printf("Caught signal %d: Segmentation fault received.\n", sig);
+}
 
 int main (int argc, char* argv[]) {
+
+    signal(SIGSEGV, handle_sigsegv);
+
     // Declare a null pointer
     int* i = NULL;
 
