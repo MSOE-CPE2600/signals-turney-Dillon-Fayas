@@ -6,6 +6,10 @@
  *   1. Run the program: ./output
  *   2. The program will display its PID
  *   3. In another terminal, send SIGUSR1 using kill -SIGUSR1 <PID>
+ *
+ * Brief Summary of Modifications:
+ *   - Implemented a signal handler for SIGUSR1 using sigaction.
+ *   - The handler prints the user ID of the sender when SIGUSR1 is received.
  */
 
 #include <stdio.h>

@@ -7,6 +7,8 @@
  * Modified by:
  * 
  * Brief summary of modifications:
+ *   - Added a signal handler for SIGSEGV to catch segmentation faults.
+ *   - The handler prints a message indicating that a segmentation fault was caught.
  */
 
 

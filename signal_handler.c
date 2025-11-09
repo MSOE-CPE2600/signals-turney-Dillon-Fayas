@@ -7,6 +7,7 @@
  * Modified by:
  * 
  * Brief summary of modifications:
+ *   - Implemented a signal handler for SIGINT that prints a message and exits the program.
  */
 
 
